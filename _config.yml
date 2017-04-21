@@ -16,6 +16,10 @@ description: A Curious Researcher
 # Flags below are optional
 #
 
+---
+excerpt_separator: <!--more-->  # you can specify your own separator, of course.
+---
+
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
