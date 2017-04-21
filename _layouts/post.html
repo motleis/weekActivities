@@ -13,8 +13,6 @@ layout: default
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
 
-  {% include disqus.html %}
-</article>
 
 <div class="PageNavigation">
   {% if page.previous.url %}
@@ -25,5 +23,9 @@ layout: default
   {% endif %}
 </div>
 
-{% include disqus.html %}
+  {% if page.comments != false and site.disqus %}
+  <section id="disqus_thread"></section>
+  {% include disqus.html %}
+  {% endif %}
 
+</article>
